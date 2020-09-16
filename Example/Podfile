@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'QXVIP_Example' do
+  pod 'QXVIP', :path => '../'
+
+  target 'QXVIP_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
