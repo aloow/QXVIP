@@ -1,0 +1,6 @@
+framework module QXVIP {
+  umbrella header "QXVIP-umbrella.h"
+
+  export *
+  module * { export * }
+}

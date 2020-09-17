@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomeDetailsController">
+            <connections>
+                <outlet property="categoryView" destination="vTq-hq-TLo" id="GCO-it-Cd7"/>
+                <outlet property="containView" destination="Kcn-cS-Hms" id="eEI-bW-xgB"/>
+                <outlet property="typeSelectView" destination="34b-0w-2Fj" id="M93-bc-wh7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-hq-TLo" customClass="JXCategoryTitleView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="P6P-5s-33s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-cS-Hms">
+                    <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34b-0w-2Fj" customClass="TypeSelectView">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Kcn-cS-Hms" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="8dc-7I-hkF"/>
+                <constraint firstItem="34b-0w-2Fj" firstAttribute="top" secondItem="vTq-hq-TLo" secondAttribute="bottom" id="9YE-bP-5FQ"/>
+                <constraint firstItem="vTq-hq-TLo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="CIV-li-KuN"/>
+                <constraint firstAttribute="bottom" secondItem="34b-0w-2Fj" secondAttribute="bottom" id="IzN-VF-YZP"/>
+                <constraint firstItem="Kcn-cS-Hms" firstAttribute="top" secondItem="vTq-hq-TLo" secondAttribute="bottom" constant="40" id="Jbm-C6-KJd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Kcn-cS-Hms" secondAttribute="trailing" id="K0H-rt-DzS"/>
+                <constraint firstAttribute="bottom" secondItem="Kcn-cS-Hms" secondAttribute="bottom" id="ThC-AJ-v89"/>
+                <constraint firstItem="34b-0w-2Fj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dSj-dD-5bb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="34b-0w-2Fj" secondAttribute="trailing" id="e8p-nO-JL6"/>
+                <constraint firstItem="vTq-hq-TLo" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="n4h-e8-jOm"/>
+                <constraint firstItem="vTq-hq-TLo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pZn-bx-fUO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+</document>

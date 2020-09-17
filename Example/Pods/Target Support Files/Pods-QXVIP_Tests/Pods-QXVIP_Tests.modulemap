@@ -1,0 +1,6 @@
+framework module Pods_QXVIP_Tests {
+  umbrella header "Pods-QXVIP_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

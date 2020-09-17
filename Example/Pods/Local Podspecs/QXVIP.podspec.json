@@ -1,0 +1,58 @@
+{
+  "name": "QXVIP",
+  "version": "0.1.0",
+  "summary": "my short description of QXVIP.",
+  "description": "Add long description of the pod here.",
+  "homepage": "https://github.com/aloow/QXVIP",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aloow": "xuesq@pvc123.com"
+  },
+  "source": {
+    "git": "https://github.com/aloow/QXVIP.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "QXVIP/Classes/**/*",
+  "resources": "QXVIP/Assets/*.{xcassets}",
+  "dependencies": {
+    "MGJRouter": [
+      "~> 0.10.0"
+    ],
+    "MJRefresh": [
+      "~> 3.1.15.3"
+    ],
+    "MJExtension": [
+      "~> 3.0.15.1"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "AFNetworking": [
+      "~> 4.0"
+    ],
+    "JXBWebKit": [
+      "~> 1.2.0"
+    ],
+    "LEEAlert": [
+      "~> 1.4.1"
+    ],
+    "YYCategories": [
+      "~> 1.0.4"
+    ],
+    "JXCategoryView": [
+      "~> 1.5.6"
+    ],
+    "SDCycleScrollView": [
+      ">= 1.80"
+    ],
+    "DZNEmptyDataSet": [
+      "~> 1.8.1"
+    ]
+  }
+}

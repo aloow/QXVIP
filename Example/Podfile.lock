@@ -1,0 +1,86 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - DZNEmptyDataSet (1.8.1)
+  - JXBWebKit (1.2.1)
+  - JXCategoryView (1.5.6)
+  - LEEAlert (1.4.1)
+  - Masonry (1.1.0)
+  - MGJRouter (0.10.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - QXVIP (0.1.0):
+    - AFNetworking (~> 4.0)
+    - DZNEmptyDataSet (~> 1.8.1)
+    - JXBWebKit (~> 1.2.0)
+    - JXCategoryView (~> 1.5.6)
+    - LEEAlert (~> 1.4.1)
+    - Masonry (~> 1.1.0)
+    - MGJRouter (~> 0.10.0)
+    - MJExtension (~> 3.0.15.1)
+    - MJRefresh (~> 3.1.15.3)
+    - SDCycleScrollView (>= 1.80)
+    - YYCategories (~> 1.0.4)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - MGJRouter (~> 0.10.0)
+  - QXVIP (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - DZNEmptyDataSet
+    - JXBWebKit
+    - JXCategoryView
+    - LEEAlert
+    - Masonry
+    - MGJRouter
+    - MJExtension
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - YYCategories
+
+EXTERNAL SOURCES:
+  QXVIP:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  JXBWebKit: 9b8c67238e11371c5a91bf55ecd316df7ac84ca6
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
+  LEEAlert: 808af2180ddde98f77f487ee29165673a45376bb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  QXVIP: 7e7cec6e1c1ac4d51ff96da264192008b1373532
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 9d9fbd7735ccfad1007783daa263df2806d8d695
+
+COCOAPODS: 1.10.0.beta.2

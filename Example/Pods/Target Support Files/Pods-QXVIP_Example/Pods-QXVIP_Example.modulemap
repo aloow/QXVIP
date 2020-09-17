@@ -1,0 +1,6 @@
+framework module Pods_QXVIP_Example {
+  umbrella header "Pods-QXVIP_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

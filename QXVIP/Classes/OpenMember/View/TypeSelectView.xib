@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TypeSelectView">
+            <connections>
+                <outlet property="collectionView" destination="SCC-BD-OV8" id="a9B-2b-fSW"/>
+                <outlet property="timeButton" destination="15r-F7-1vF" id="LKo-YA-bba"/>
+                <outlet property="typeButton" destination="1tZ-eo-bFn" id="2dW-xo-Qh4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="697"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="NVZ-70-jPh">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hv-pM-DnE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lp2-Es-Dcu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6D-aP-Mp7">
+                            <rect key="frame" x="0.0" y="39" width="414" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="91P-69-DSQ"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ldD-Ib-N0n">
+                            <rect key="frame" x="0.0" y="1" width="414" height="38"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15r-F7-1vF">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="38"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="时间" image="vip_Incomedetails_up">
+                                        <color key="titleColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="timeBntTap:" destination="-1" eventType="touchUpInside" id="LZM-bz-j18"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tZ-eo-bFn">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="38"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="类型" image="vip_Incomedetails_up">
+                                        <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tpyeBntTap:" destination="-1" eventType="touchUpInside" id="rtI-9B-skG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ldD-Ib-N0n" firstAttribute="top" secondItem="6hv-pM-DnE" secondAttribute="bottom" id="2LD-I1-m4I"/>
+                        <constraint firstItem="ldD-Ib-N0n" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="ENz-Jd-faO"/>
+                        <constraint firstItem="G6D-aP-Mp7" firstAttribute="top" secondItem="ldD-Ib-N0n" secondAttribute="bottom" id="NAg-r1-dTQ"/>
+                        <constraint firstAttribute="trailing" secondItem="G6D-aP-Mp7" secondAttribute="trailing" id="aEh-gp-vJk"/>
+                        <constraint firstAttribute="trailing" secondItem="6hv-pM-DnE" secondAttribute="trailing" id="al3-Oh-qBF"/>
+                        <constraint firstItem="6hv-pM-DnE" firstAttribute="top" secondItem="NVZ-70-jPh" secondAttribute="top" id="dgm-n2-EcN"/>
+                        <constraint firstAttribute="bottom" secondItem="G6D-aP-Mp7" secondAttribute="bottom" id="iFt-6Y-uX8"/>
+                        <constraint firstItem="6hv-pM-DnE" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="iUJ-WQ-WG6"/>
+                        <constraint firstAttribute="height" constant="40" id="jY7-A4-TC8"/>
+                        <constraint firstItem="G6D-aP-Mp7" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="u9S-80-kFk"/>
+                        <constraint firstAttribute="trailing" secondItem="ldD-Ib-N0n" secondAttribute="trailing" id="yGq-VZ-XaZ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-BD-OV8">
+                    <rect key="frame" x="0.0" y="40" width="414" height="657"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="evb-ua-jF5">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pSD-x2-Nn0"/>
+                        <outlet property="delegate" destination="-1" id="X0j-Lf-ZuN"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SCC-BD-OV8" secondAttribute="bottom" id="HTp-Sy-ql5"/>
+                <constraint firstItem="NVZ-70-jPh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="N64-EM-wad"/>
+                <constraint firstItem="SCC-BD-OV8" firstAttribute="top" secondItem="NVZ-70-jPh" secondAttribute="bottom" id="SVa-zv-hQ2"/>
+                <constraint firstAttribute="trailing" secondItem="SCC-BD-OV8" secondAttribute="trailing" id="VXJ-9c-kXx"/>
+                <constraint firstAttribute="trailing" secondItem="NVZ-70-jPh" secondAttribute="trailing" id="dL1-7K-7le"/>
+                <constraint firstItem="NVZ-70-jPh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ezr-km-BAB"/>
+                <constraint firstItem="SCC-BD-OV8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="itV-JN-TrB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149.27536231884059" y="86.049107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="vip_Incomedetails_up" width="5" height="3"/>
+    </resources>
+</document>

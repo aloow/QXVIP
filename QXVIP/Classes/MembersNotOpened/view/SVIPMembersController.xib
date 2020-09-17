@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SVIPMembersController">
+            <connections>
+                <outlet property="containerStackView" destination="wHW-4r-zas" id="Gp0-S2-n4g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="991"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wHW-4r-zas" userLabel="Container Stack View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="947"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lRk-KP-4Xf" userLabel="Mid Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="407.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-7h-zFf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="407.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btj-RO-npv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_rbg" translatesAutoresizingMaskIntoConstraints="NO" id="o9D-aZ-VrO">
+                                                    <rect key="frame" x="0.0" y="5" width="220" height="50"/>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="36i-H0-Jey"/>
+                                                        <constraint firstAttribute="width" constant="220" id="Bu4-a5-bTA"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="0hN-8B-S7T" appends="YES" id="slV-G1-lcd"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_rbbg" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-2n-ofL">
+                                                    <rect key="frame" x="190" y="0.0" width="224" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="yHR-Ot-qaw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SVIP会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2y-G1-2yX">
+                                                    <rect key="frame" x="264" y="17" width="76" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQN-Vy-DLJ">
+                                                    <rect key="frame" x="81.5" y="20.5" width="57" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="kQN-Vy-DLJ" firstAttribute="centerX" secondItem="o9D-aZ-VrO" secondAttribute="centerX" id="3QR-ms-k1H"/>
+                                                <constraint firstItem="F2y-G1-2yX" firstAttribute="centerX" secondItem="IeA-2n-ofL" secondAttribute="centerX" id="8jb-iL-drQ"/>
+                                                <constraint firstItem="o9D-aZ-VrO" firstAttribute="leading" secondItem="Btj-RO-npv" secondAttribute="leading" id="CRx-k0-OCf"/>
+                                                <constraint firstAttribute="bottom" secondItem="o9D-aZ-VrO" secondAttribute="bottom" id="GD6-yi-ebf"/>
+                                                <constraint firstAttribute="trailing" secondItem="IeA-2n-ofL" secondAttribute="trailing" id="GZS-o3-KII"/>
+                                                <constraint firstAttribute="bottom" secondItem="IeA-2n-ofL" secondAttribute="bottom" id="LOK-8H-3eU"/>
+                                                <constraint firstItem="kQN-Vy-DLJ" firstAttribute="centerY" secondItem="o9D-aZ-VrO" secondAttribute="centerY" id="QpV-xn-b7X"/>
+                                                <constraint firstItem="IeA-2n-ofL" firstAttribute="leading" secondItem="o9D-aZ-VrO" secondAttribute="trailing" constant="-30" id="Tgu-2b-dZd"/>
+                                                <constraint firstItem="F2y-G1-2yX" firstAttribute="centerY" secondItem="IeA-2n-ofL" secondAttribute="centerY" id="g3t-N6-0hB"/>
+                                                <constraint firstItem="IeA-2n-ofL" firstAttribute="top" secondItem="Btj-RO-npv" secondAttribute="top" id="lhB-U7-aya"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2b-Vj-Qeh">
+                                            <rect key="frame" x="0.0" y="55" width="414" height="352.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hNh-TF-lt4">
+                                                    <rect key="frame" x="20" y="15" width="374" height="322.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzS-1f-DDr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="12"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_top_decorate_l" translatesAutoresizingMaskIntoConstraints="NO" id="4ic-f3-Svj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="12"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="12" id="AEe-jE-aag"/>
+                                                                        <constraint firstAttribute="width" secondItem="4ic-f3-Svj" secondAttribute="height" multiplier="75:9" id="Kgw-Cc-jRv"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SVIP会员尊享9大特权" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owT-du-b1M">
+                                                                    <rect key="frame" x="100" y="0.0" width="174" height="12"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_top_decorate_r" translatesAutoresizingMaskIntoConstraints="NO" id="Oqj-56-Iq8">
+                                                                    <rect key="frame" x="274" y="0.0" width="100" height="12"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="Oqj-56-Iq8" secondAttribute="height" multiplier="75:9" id="VJX-kx-ax0"/>
+                                                                        <constraint firstAttribute="height" constant="12" id="dip-Dl-NM5"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="maR-YK-4Eq">
+                                                            <rect key="frame" x="0.0" y="42" width="374" height="73.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SkI-nJ-h4j">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_1" translatesAutoresizingMaskIntoConstraints="NO" id="JrU-kH-hVj">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="27" id="6o5-wB-dCb"/>
+                                                                                <constraint firstAttribute="width" secondItem="JrU-kH-hVj" secondAttribute="height" multiplier="1:1" id="wpb-Bv-It1"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-w4-RS9">
+                                                                            <rect key="frame" x="31.5" y="37" width="61.5" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物返现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5P-o2-fqI">
+                                                                                    <rect key="frame" x="2" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单单返现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTy-tZ-AsB">
+                                                                                    <rect key="frame" x="0.0" y="22" width="61.5" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <gestureRecognizers/>
+                                                                    <connections>
+                                                                        <outletCollection property="gestureRecognizers" destination="WU1-HV-Nwc" appends="YES" id="1LV-Fz-Lzs"/>
+                                                                    </connections>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-d8-clC">
+                                                                    <rect key="frame" x="124.5" y="0.0" width="125" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_2" translatesAutoresizingMaskIntoConstraints="NO" id="OUy-vB-66q">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="27" id="5z1-8M-63K"/>
+                                                                                <constraint firstAttribute="width" secondItem="OUy-vB-66q" secondAttribute="height" multiplier="1:1" id="glL-6B-tTB"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-GN-ww3">
+                                                                            <rect key="frame" x="32" y="37" width="61.5" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享赚钱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li9-1P-3CL">
+                                                                                    <rect key="frame" x="2" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享赚佣金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-1p-hzH">
+                                                                                    <rect key="frame" x="0.0" y="22" width="61.5" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wNv-wI-DHE">
+                                                                    <rect key="frame" x="249.5" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_bottom_1_l" translatesAutoresizingMaskIntoConstraints="NO" id="Fwn-oW-JL2">
+                                                                            <rect key="frame" x="48.5" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="Fwn-oW-JL2" secondAttribute="height" multiplier="1:1" id="aam-bj-2Jb"/>
+                                                                                <constraint firstAttribute="width" constant="27" id="bKw-nA-ha5"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-gN-Oz6">
+                                                                            <rect key="frame" x="33.5" y="37" width="57.5" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自营店铺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiI-i9-gni">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0成本创业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbA-Wa-VaP">
+                                                                                    <rect key="frame" x="0.0" y="22" width="57" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FB3-bU-71z">
+                                                            <rect key="frame" x="0.0" y="145.5" width="374" height="73.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LTQ-vV-SRI">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_4" translatesAutoresizingMaskIntoConstraints="NO" id="HBg-WT-Pad">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="HBg-WT-Pad" secondAttribute="height" multiplier="1:1" id="JWb-ea-MYW"/>
+                                                                                <constraint firstAttribute="width" constant="27" id="w83-xH-mB6"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9d7-oy-n8l">
+                                                                            <rect key="frame" x="25.5" y="37" width="74" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每月优惠券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEf-zW-OYr">
+                                                                                    <rect key="frame" x="1" y="0.0" width="71.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月月领礼包券" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-TA-YnI">
+                                                                                    <rect key="frame" x="0.0" y="22" width="74" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4cG-Wt-RMW">
+                                                                    <rect key="frame" x="124.5" y="0.0" width="125" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_5" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-nU-dWK">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="27" id="IKX-KT-HI9"/>
+                                                                                <constraint firstAttribute="width" secondItem="rdu-nU-dWK" secondAttribute="height" multiplier="1:1" id="zjG-dj-MCL"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ggh-Ju-1zF">
+                                                                            <rect key="frame" x="19.5" y="37" width="86" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专属特惠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh7-Mh-qQi">
+                                                                                    <rect key="frame" x="14.5" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优选折上折商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu7-Il-U8f">
+                                                                                    <rect key="frame" x="0.0" y="22" width="86" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1PK-Ww-ZTd">
+                                                                    <rect key="frame" x="249.5" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_6" translatesAutoresizingMaskIntoConstraints="NO" id="0CT-Lc-QJ1">
+                                                                            <rect key="frame" x="48.5" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="27" id="5s9-Ni-HUc"/>
+                                                                                <constraint firstAttribute="width" secondItem="0CT-Lc-QJ1" secondAttribute="height" multiplier="1:1" id="7Kb-IJ-kbO"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-eR-gwE">
+                                                                            <rect key="frame" x="25" y="37" width="74" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专属客服" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ3-Wt-QCd">
+                                                                                    <rect key="frame" x="8.5" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服优先服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wc-Nn-ujo">
+                                                                                    <rect key="frame" x="0.0" y="22" width="74" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V5L-cD-ykd">
+                                                            <rect key="frame" x="0.0" y="249" width="374" height="73.5"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LmM-zp-Euy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_mid_3" translatesAutoresizingMaskIntoConstraints="NO" id="yyj-Nr-J9K">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="yyj-Nr-J9K" secondAttribute="height" multiplier="1:1" id="VuV-GB-1V8"/>
+                                                                                <constraint firstAttribute="width" constant="27" id="c0F-sC-x7k"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DYp-wt-00H">
+                                                                            <rect key="frame" x="31.5" y="37" width="61.5" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请有奖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMn-9G-2d3">
+                                                                                    <rect key="frame" x="2" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请奖现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3o-Ce-mT3">
+                                                                                    <rect key="frame" x="0.0" y="22" width="61.5" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l89-Yo-iUv">
+                                                                    <rect key="frame" x="124.5" y="0.0" width="125" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_bottom_2_l" translatesAutoresizingMaskIntoConstraints="NO" id="SCR-Zk-Zdb">
+                                                                            <rect key="frame" x="49" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="27" id="944-4E-HFN"/>
+                                                                                <constraint firstAttribute="width" secondItem="SCR-Zk-Zdb" secondAttribute="height" multiplier="1:1" id="Pa7-CM-ZGu"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cRs-dc-B8B">
+                                                                            <rect key="frame" x="25.5" y="37" width="74" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收徒赚奖励" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWK-as-u15">
+                                                                                    <rect key="frame" x="1.5" y="0.0" width="71.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指导徒弟开店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQQ-ht-QLt">
+                                                                                    <rect key="frame" x="0.0" y="22" width="74" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gjg-Zj-tpZ">
+                                                                    <rect key="frame" x="249.5" y="0.0" width="124.5" height="73.5"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_bottom_3_l" translatesAutoresizingMaskIntoConstraints="NO" id="pVU-fv-NqM">
+                                                                            <rect key="frame" x="48.5" y="0.0" width="27" height="27"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="pVU-fv-NqM" secondAttribute="height" multiplier="1:1" id="at0-TP-MSV"/>
+                                                                                <constraint firstAttribute="width" constant="27" id="r8h-y8-zqY"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UE8-jn-Ah8">
+                                                                            <rect key="frame" x="33.5" y="37" width="57.5" height="36.5"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多特权" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8s-P2-fNQ">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="57.5" height="17"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="敬请期待" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emC-cK-yeU">
+                                                                                    <rect key="frame" x="4" y="22" width="49.5" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hNh-TF-lt4" secondAttribute="bottom" constant="15" id="5F0-aL-LIf"/>
+                                                <constraint firstItem="hNh-TF-lt4" firstAttribute="leading" secondItem="v2b-Vj-Qeh" secondAttribute="leading" constant="20" id="CAW-yK-rBk"/>
+                                                <constraint firstItem="hNh-TF-lt4" firstAttribute="top" secondItem="v2b-Vj-Qeh" secondAttribute="top" constant="15" id="QF1-PA-X9C"/>
+                                                <constraint firstAttribute="trailing" secondItem="hNh-TF-lt4" secondAttribute="trailing" constant="20" id="uv2-kV-hGy"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dAx-LL-0M6">
+                            <rect key="frame" x="0.0" y="427.5" width="414" height="79.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="升级SVIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwY-kU-VxX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82r-sq-0ZM">
+                                    <rect key="frame" x="0.0" y="29.5" width="414" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="3jQ-8h-Bcz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="免费升级，立即邀请" backgroundImage="vip_bottom_bnt">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="upgradeTap:" destination="-1" eventType="touchUpInside" id="mOK-IY-X4o"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="svip_privilege" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-xr-T43">
+                            <rect key="frame" x="0.0" y="527" width="414" height="420"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sEc-xr-T43" secondAttribute="height" multiplier="345:350" id="m8b-ar-I3Q"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wHW-4r-zas" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Jee-Ii-OO3"/>
+                <constraint firstAttribute="bottom" secondItem="wHW-4r-zas" secondAttribute="bottom" id="kei-BE-9Ue"/>
+                <constraint firstAttribute="trailing" secondItem="wHW-4r-zas" secondAttribute="trailing" id="rJs-36-Imi"/>
+                <constraint firstItem="wHW-4r-zas" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="thJ-nf-nwk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="183.81696428571428"/>
+        </view>
+        <tapGestureRecognizer id="0hN-8B-S7T" userLabel="swichToVip">
+            <connections>
+                <action selector="swichToVip:" destination="-1" id="vqr-QL-8mO"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="WU1-HV-Nwc" userLabel="0">
+            <connections>
+                <action selector="midTap:" destination="-1" id="ect-7S-JRF"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="svip_privilege" width="345" height="350"/>
+        <image name="vip_bottom_1_l" width="27" height="27"/>
+        <image name="vip_bottom_2_l" width="27" height="27.5"/>
+        <image name="vip_bottom_3_l" width="27.5" height="27"/>
+        <image name="vip_bottom_bnt" width="320" height="49.5"/>
+        <image name="vip_mid_1" width="27" height="27"/>
+        <image name="vip_mid_2" width="27" height="27"/>
+        <image name="vip_mid_3" width="27" height="27"/>
+        <image name="vip_mid_4" width="27" height="27.5"/>
+        <image name="vip_mid_5" width="27" height="27"/>
+        <image name="vip_mid_6" width="27" height="27"/>
+        <image name="vip_mid_rbbg" width="179" height="55"/>
+        <image name="vip_mid_rbg" width="192.5" height="50"/>
+        <image name="vip_top_decorate_l" width="75" height="9"/>
+        <image name="vip_top_decorate_r" width="75.5" height="9"/>
+    </resources>
+</document>
